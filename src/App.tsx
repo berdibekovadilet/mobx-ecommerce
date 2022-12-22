@@ -1,17 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
-import AllProducts from "./components/AllProducts";
-import "./App.css";
 import Footer from "./components/Footer";
-import Login from "./components/Login";
+import AppRoutes from "./components/AppRoutes";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <AllProducts />
-      <Footer />
-      <Login />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <AppRoutes />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
