@@ -1,9 +1,11 @@
 import axios from "axios";
 import { action, computed, makeObservable, observable } from "mobx";
+import { RootStore } from "./RootStore";
 
 export class LoginStore {
   loginToken: string = "";
-  constructor() {
+
+  constructor(rootStore: RootStore) {
     makeObservable(this, {
       loginToken: observable,
       fetchUserToken: action,
