@@ -1,11 +1,11 @@
 import TopSection from "./TopSection";
-import Product from "./Product";
+import Products from "./Products";
 
 const AllProducts = () => {
   return (
     <main>
       <TopSection />
-      <Product />
+      <Products />
     </main>
   );
 };

@@ -4,9 +4,10 @@ const Product = () => {
       <div className="card shadow-sm">
         <img
           width="100%"
-          height="400"
+          height="300"
           src="https://softech.kg/image/cache/952e36750902894b2ec8c26ca36ee63d.jpg"
           alt="Product images"
+          className="p-5"
         />
 
         <div className="card-body">
